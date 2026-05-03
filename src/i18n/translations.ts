@@ -16,8 +16,9 @@ export const translations = {
       label: "Nos offres",
       title: "Choisissez votre rang",
       subtitle: "Trois niveaux d'excellence, une seule promesse : la qualité.",
-      order: "Commander",
-      popular: "Le plus choisi",
+      order: "Commander maintenant",
+      popular: "Populaire",
+      best: "Best Value",
       silver: {
         name: "Pack Silver",
         price: "10€",
@@ -61,17 +62,17 @@ export const translations = {
       title: "L'excellence, par défaut",
       subtitle: "Quatre piliers qui définissent notre service.",
       items: [
-        { title: "Rapide", desc: "Livraison express dès la commande validée.", icon: "⚡" },
-        { title: "Sécurisé", desc: "Méthodes éprouvées, comptes protégés.", icon: "🔒" },
-        { title: "Fiable", desc: "Des centaines de clients satisfaits.", icon: "✅" },
-        { title: "Support actif", desc: "Une équipe disponible jour et nuit.", icon: "💬" },
+        { title: "Rapide", desc: "Livraison express dès la commande validée.", icon: "zap" },
+        { title: "Sécurisé", desc: "Méthodes éprouvées, comptes protégés.", icon: "shield" },
+        { title: "Fiable", desc: "Des centaines de clients satisfaits.", icon: "check" },
+        { title: "Support actif", desc: "Une équipe disponible jour et nuit.", icon: "chat" },
       ],
     },
     discord: {
-      label: "Communauté",
-      title: "Rejoignez la cour royale",
+      label: "Communauté privée",
+      title: "Accédez aux services Prestige",
       subtitle:
-        "Notre Discord est la porte d'entrée vers l'univers Prestige Service. Annonces, support, exclusivités.",
+        "Rejoignez notre communauté privée et accédez à un service personnalisé, des annonces exclusives et un support dédié.",
       cta: "Rejoindre le Discord",
     },
     footer: {
@@ -87,7 +88,7 @@ export const translations = {
       title: "Prestige Service",
       subtitle: "The peak of GTA V Legacy service",
       description:
-        "An exclusive, fast and secure experience for demanding players. Outfits, garages, levels and millions delivered with prestige.",
+        "An exclusive, fast and secure experience for demanding players. Outfits, garages, levels and millions — delivered with prestige.",
       cta_discord: "Join Discord",
       cta_packs: "View packs",
     },
@@ -96,7 +97,8 @@ export const translations = {
       title: "Choose your rank",
       subtitle: "Three levels of excellence, one single promise: quality.",
       order: "Order now",
-      popular: "Most chosen",
+      popular: "Popular",
+      best: "Best Value",
       silver: {
         name: "Silver Pack",
         price: "€10",
@@ -140,17 +142,17 @@ export const translations = {
       title: "Excellence, by default",
       subtitle: "Four pillars that define our service.",
       items: [
-        { title: "Fast", desc: "Express delivery once your order is confirmed.", icon: "⚡" },
-        { title: "Secure", desc: "Proven methods, protected accounts.", icon: "🔒" },
-        { title: "Reliable", desc: "Hundreds of satisfied clients.", icon: "✅" },
-        { title: "Active support", desc: "A team available day and night.", icon: "💬" },
+        { title: "Fast", desc: "Express delivery as soon as your order is confirmed.", icon: "zap" },
+        { title: "Secure", desc: "Proven methods, fully protected accounts.", icon: "shield" },
+        { title: "Reliable", desc: "Hundreds of satisfied clients across the community.", icon: "check" },
+        { title: "Active support", desc: "A dedicated team available day and night.", icon: "chat" },
       ],
     },
     discord: {
-      label: "Community",
-      title: "Join the royal court",
+      label: "Private community",
+      title: "Access Prestige services",
       subtitle:
-        "Our Discord is the gateway to the Prestige Service universe. Announcements, support, exclusives.",
+        "Join our private community and unlock personalized service, exclusive announcements and dedicated support.",
       cta: "Join the Discord",
     },
     footer: {
