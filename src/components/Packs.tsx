@@ -1,6 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { cn } from "@/lib/utils";
-import { Check, Award, Crown, Gem } from "lucide-react";
+import { Check, Award, Crown, Gem, Zap, ShieldCheck } from "lucide-react";
+import { DISCORD_URL } from "@/lib/constants";
 
 const Packs = () => {
   const { t } = useLanguage();
@@ -84,7 +85,9 @@ const Packs = () => {
                   </ul>
 
                   <a
-                    href="#discord"
+                    href={DISCORD_URL}
+                    target="_blank"
+                    rel="noreferrer"
                     className={cn(
                       "mt-8 inline-flex w-full items-center justify-center rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-[0.18em] transition-all duration-700 ease-in-out",
                       isFeatured
@@ -95,6 +98,12 @@ const Packs = () => {
                   >
                     {t.packs.order}
                   </a>
+
+                  <div className="mt-3 flex items-center justify-center gap-4 text-[10px] uppercase tracking-[0.16em] text-foreground/55">
+                    <span className="inline-flex items-center gap-1.5"><Zap className="h-3 w-3 text-gold/70" strokeWidth={2} />{t.packs.micro_instant}</span>
+                    <span className="h-1 w-1 rounded-full bg-gold/30" />
+                    <span className="inline-flex items-center gap-1.5"><ShieldCheck className="h-3 w-3 text-gold/70" strokeWidth={2} />{t.packs.micro_secure}</span>
+                  </div>
                 </div>
               </article>
             );
