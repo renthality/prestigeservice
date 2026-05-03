@@ -4,9 +4,9 @@ export const translations = {
   fr: {
     nav: { packs: "Packs", why: "Pourquoi nous", discord: "Discord" },
     hero: {
-      tagline: "GTA V Legacy · Service Premium Sécurisé",
+      tagline: "GTA V Legacy & Enhanced · Service Premium Sécurisé",
       title: "Prestige Service",
-      subtitle: "Le sommet du service GTA V Legacy",
+      subtitle: "Le sommet du service GTA V Legacy & Enhanced",
       description:
         "Accès immédiat · Service premium sécurisé · Résultat garanti. Tenues, garages, niveaux et millions livrés avec prestige par une équipe disponible 24/7.",
       cta_discord: "Rejoindre le Discord",
@@ -79,7 +79,7 @@ export const translations = {
       cta: "Rejoindre le Discord",
     },
     footer: {
-      tagline: "Le sommet du service GTA V Legacy.",
+      tagline: "Le sommet du service GTA V Legacy & Enhanced.",
       links: { discord: "Discord", terms: "Conditions", support: "Support" },
       rights: "Tous droits réservés.",
     },
@@ -87,9 +87,9 @@ export const translations = {
   en: {
     nav: { packs: "Packs", why: "Why us", discord: "Discord" },
     hero: {
-      tagline: "GTA V Legacy · Secure Premium Service",
+      tagline: "GTA V Legacy & Enhanced· Secure Premium Service",
       title: "Prestige Service",
-      subtitle: "The peak of GTA V Legacy service",
+      subtitle: "The peak of GTA V Legacy & Enhanced",
       description:
         "Instant access · Secure premium service · Guaranteed results. Outfits, garages, levels and millions delivered with prestige by a 24/7 dedicated team.",
       cta_discord: "Join the Discord",
@@ -162,7 +162,7 @@ export const translations = {
       cta: "Join the Discord",
     },
     footer: {
-      tagline: "The peak of GTA V Legacy service.",
+      tagline: "The peak of GTA V Legacy & Enhanced service.",
       links: { discord: "Discord", terms: "Terms", support: "Support" },
       rights: "All rights reserved.",
     },
