@@ -134,7 +134,33 @@
     box-shadow: 0 0 30px hsl(var(--gold) / 0.3), 0 0 60px hsl(var(--gold) / 0.1);
   }
 
-  /* Metallic shine sweep across cards */
+  /* Slow metallic shine sweep across cards (auto, every ~6s) */
+  .shine-auto {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine-auto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      hsl(48 100% 80% / 0.10) 45%,
+      hsl(48 100% 92% / 0.22) 50%,
+      hsl(48 100% 80% / 0.10) 55%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    pointer-events: none;
+    z-index: 1;
+    animation: shine-sweep 6s ease-in-out infinite;
+  }
+
+  /* Hover-only shine (slow) */
   .shine::before {
     content: '';
     position: absolute;
@@ -145,19 +171,27 @@
     background: linear-gradient(
       120deg,
       transparent 0%,
-      hsl(48 100% 80% / 0.18) 45%,
-      hsl(48 100% 90% / 0.28) 50%,
-      hsl(48 100% 80% / 0.18) 55%,
+      hsl(48 100% 80% / 0.18) 50%,
       transparent 100%
     );
     transform: skewX(-20deg);
-    transition: left 0.9s ease;
+    transition: left 1.2s ease-in-out;
     pointer-events: none;
     z-index: 1;
   }
-
   .shine:hover::before {
     left: 130%;
+  }
+
+  .logo-glow {
+    filter: drop-shadow(0 0 14px hsl(45 100% 50% / 0.35)) drop-shadow(0 0 28px hsl(45 100% 50% / 0.15));
+    transition: filter 1s ease-in-out;
+  }
+  .logo-glow:hover {
+    filter: drop-shadow(0 0 20px hsl(45 100% 55% / 0.55)) drop-shadow(0 0 40px hsl(45 100% 50% / 0.25));
+  }
+  .logo-glow-soft {
+    animation: logo-breathe 6s ease-in-out infinite;
   }
 
   /* Animated gold border */
@@ -178,7 +212,7 @@
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    animation: gold-flow 6s linear infinite;
+    animation: gold-flow 10s ease-in-out infinite;
     pointer-events: none;
   }
 
@@ -192,12 +226,12 @@
   }
 
   .text-shine {
-    background: linear-gradient(90deg, hsl(45 80% 50%) 0%, hsl(48 100% 85%) 50%, hsl(45 80% 50%) 100%);
+    background: linear-gradient(90deg, hsl(45 75% 55%) 0%, hsl(48 100% 88%) 50%, hsl(45 75% 55%) 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: text-shimmer 4s linear infinite;
+    animation: text-shimmer 8s ease-in-out infinite;
   }
 
   .noise-texture {
@@ -209,8 +243,8 @@
 
 @layer components {
   @keyframes gold-flow {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 200% 50%; }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 200% 50%; }
   }
 
   @keyframes text-shimmer {
@@ -219,29 +253,35 @@
   }
 
   @keyframes float-up {
-    0% { opacity: 0; transform: translateY(30px); }
+    0% { opacity: 0; transform: translateY(24px); }
     100% { opacity: 1; transform: translateY(0); }
   }
 
-  @keyframes pulse-gold {
-    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.6); }
-    50% { box-shadow: 0 0 0 18px hsl(var(--gold) / 0); }
+  @keyframes pulse-soft {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.35); }
+    50% { box-shadow: 0 0 0 14px hsl(var(--gold) / 0); }
   }
 
   @keyframes particle-float {
     0% { transform: translateY(100vh) translateX(0); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
     100% { transform: translateY(-10vh) translateX(40px); opacity: 0; }
   }
 
-  @keyframes crown-glow {
-    0%, 100% { filter: drop-shadow(0 0 10px hsl(var(--gold) / 0.6)) drop-shadow(0 0 20px hsl(var(--gold) / 0.3)); }
-    50% { filter: drop-shadow(0 0 18px hsl(var(--gold) / 0.9)) drop-shadow(0 0 35px hsl(var(--gold) / 0.5)); }
+  @keyframes logo-breathe {
+    0%, 100% { filter: drop-shadow(0 0 14px hsl(45 100% 50% / 0.30)) drop-shadow(0 0 28px hsl(45 100% 50% / 0.12)); }
+    50% { filter: drop-shadow(0 0 22px hsl(45 100% 55% / 0.50)) drop-shadow(0 0 42px hsl(45 100% 50% / 0.22)); }
   }
 
   @keyframes spin-slow {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }
+
+  @keyframes shine-sweep {
+    0% { left: -120%; }
+    60%, 100% { left: 130%; }
+  }
 }
+
