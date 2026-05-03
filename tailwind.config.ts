@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+        },
+        noir: "hsl(var(--noir))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,14 +72,6 @@ export default {
       fontFamily: {
         display: ["Cinzel", "serif"],
         sans: ["Inter", "sans-serif"],
-      },
-      colors: {
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          light: "hsl(var(--gold-light))",
-          dark: "hsl(var(--gold-dark))",
-        },
-        noir: "hsl(var(--noir))",
       },
       keyframes: {
         "accordion-down": { from: { height: "0" }, to: { height: "var(--radix-accordion-content-height)" } },
