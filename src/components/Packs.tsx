@@ -109,6 +109,10 @@ const Packs = () => {
             );
           })}
         </div>
+
+        <p className="mt-12 text-center text-sm uppercase tracking-[0.28em] text-gold/70">
+          {t.packs.delivery}
+        </p>
       </div>
     </section>
   );
