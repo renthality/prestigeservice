@@ -21,7 +21,7 @@ const Hero = () => {
 
       <div className="container relative flex flex-col items-center text-center">
         <div className="animate-scale-in [animation-delay:0.1s]">
-          <CrownLogo size={200} className="logo-glow-soft" />
+          <CrownLogo size={240} className="logo-glow-soft drop-shadow-[0_8px_30px_hsl(45_100%_50%/0.25)]" />
         </div>
 
         <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-gold/25 bg-noir/60 px-4 py-1.5 text-[11px] uppercase tracking-[0.32em] text-gold/80 backdrop-blur animate-fade-in [animation-delay:0.35s]">
