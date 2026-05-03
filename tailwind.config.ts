@@ -91,7 +91,7 @@ export default {
         "fade-in-slow": "fade-in-slow 1.4s ease-in-out both",
         "scale-in": "scale-in 0.8s ease-in-out both",
         "float-up": "float-up 1s ease-in-out both",
-        "pulse-soft": "pulse-soft 5s ease-in-out infinite",
+        "pulse-soft": "pulse-soft 4s ease-in-out infinite",
         "logo-breathe": "logo-breathe 6s ease-in-out infinite",
         "spin-slow": "spin-slow 30s linear infinite",
       },

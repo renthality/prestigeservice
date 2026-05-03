@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import CrownLogo from "./CrownLogo";
+import { DISCORD_URL } from "@/lib/constants";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -15,7 +16,7 @@ const Footer = () => {
         </div>
 
         <nav className="flex flex-wrap items-center justify-center gap-6 text-sm">
-          <a href="#discord" className="text-foreground/70 hover:text-gold transition-colors">
+          <a href={DISCORD_URL} target="_blank" rel="noreferrer" className="text-foreground/70 hover:text-gold transition-colors">
             {t.footer.links.discord}
           </a>
           <a href="#" className="text-foreground/70 hover:text-gold transition-colors">

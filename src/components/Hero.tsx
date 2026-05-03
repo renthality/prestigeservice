@@ -2,6 +2,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import CrownLogo from "./CrownLogo";
 import GoldParticles from "./GoldParticles";
 import { ArrowRight } from "lucide-react";
+import { DISCORD_URL } from "@/lib/constants";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -29,7 +30,7 @@ const Hero = () => {
           {t.hero.tagline}
         </div>
 
-        <h1 className="mt-6 font-display text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl animate-fade-in [animation-delay:0.5s]">
+        <h1 className="mt-8 font-display text-6xl font-bold leading-[1.05] tracking-tight md:text-8xl lg:text-9xl animate-fade-in [animation-delay:0.5s]">
           <span className="text-shine">{t.hero.title}</span>
         </h1>
 
@@ -51,7 +52,9 @@ const Hero = () => {
             <ArrowRight className="h-4 w-4 transition-transform duration-700 ease-in-out group-hover:translate-x-1" />
           </a>
           <a
-            href="#discord"
+            href={DISCORD_URL}
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-gold/40 bg-noir/40 px-8 py-4 text-sm font-semibold uppercase tracking-[0.2em] text-gold backdrop-blur transition-all duration-700 ease-in-out hover:border-gold hover:bg-noir/70 hover:scale-[1.03]"
           >
             {t.hero.cta_discord}

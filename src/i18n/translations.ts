@@ -4,21 +4,24 @@ export const translations = {
   fr: {
     nav: { packs: "Packs", why: "Pourquoi nous", discord: "Discord" },
     hero: {
-      tagline: "GTA V Legacy · Service Premium",
+      tagline: "GTA V Legacy · Service Premium Sécurisé",
       title: "Prestige Service",
       subtitle: "Le sommet du service GTA V Legacy",
       description:
-        "Une expérience exclusive, rapide et sécurisée pour les joueurs exigeants. Tenues, garages, niveaux et millions livrés avec prestige.",
-      cta_discord: "Rejoindre Discord",
-      cta_packs: "Voir les packs",
+        "Accès immédiat · Service premium sécurisé · Résultat garanti. Tenues, garages, niveaux et millions livrés avec prestige par une équipe disponible 24/7.",
+      cta_discord: "Rejoindre le Discord",
+      cta_packs: "Commander maintenant",
     },
     packs: {
       label: "Nos offres",
-      title: "Choisissez votre rang",
-      subtitle: "Trois niveaux d'excellence, une seule promesse : la qualité.",
+      title: "Choisissez votre niveau de prestige",
+      subtitle: "Trois rangs d'excellence. Une seule promesse : la qualité, livrée immédiatement.",
       order: "Commander maintenant",
       popular: "Populaire",
-      best: "Best Value",
+      best: "Meilleure offre",
+      micro_instant: "Accès instantané",
+      micro_secure: "Paiement sécurisé",
+      delivery: "Livraison rapide après achat via Discord",
       silver: {
         name: "Pack Silver",
         price: "10€",
@@ -62,17 +65,17 @@ export const translations = {
       title: "L'excellence, par défaut",
       subtitle: "Quatre piliers qui définissent notre service.",
       items: [
-        { title: "Rapide", desc: "Livraison express dès la commande validée.", icon: "zap" },
-        { title: "Sécurisé", desc: "Méthodes éprouvées, comptes protégés.", icon: "shield" },
-        { title: "Fiable", desc: "Des centaines de clients satisfaits.", icon: "check" },
-        { title: "Support actif", desc: "Une équipe disponible jour et nuit.", icon: "chat" },
+        { title: "Accès immédiat", desc: "Livraison express dès la commande validée.", icon: "zap" },
+        { title: "100% sécurisé", desc: "Méthodes éprouvées, comptes entièrement protégés.", icon: "shield" },
+        { title: "Résultat garanti", desc: "Des centaines de clients satisfaits.", icon: "check" },
+        { title: "Support 24/7", desc: "Une équipe dédiée disponible jour et nuit.", icon: "chat" },
       ],
     },
     discord: {
       label: "Communauté privée",
-      title: "Accédez aux services Prestige",
+      title: "Rejoignez Discord pour commander",
       subtitle:
-        "Rejoignez notre communauté privée et accédez à un service personnalisé, des annonces exclusives et un support dédié.",
+        "Rejoignez notre Discord pour accéder aux services et passer commande rapidement. Support dédié, annonces exclusives, livraison express.",
       cta: "Rejoindre le Discord",
     },
     footer: {
@@ -84,21 +87,24 @@ export const translations = {
   en: {
     nav: { packs: "Packs", why: "Why us", discord: "Discord" },
     hero: {
-      tagline: "GTA V Legacy · Premium Service",
+      tagline: "GTA V Legacy · Secure Premium Service",
       title: "Prestige Service",
       subtitle: "The peak of GTA V Legacy service",
       description:
-        "An exclusive, fast and secure experience for demanding players. Outfits, garages, levels and millions — delivered with prestige.",
-      cta_discord: "Join Discord",
-      cta_packs: "View packs",
+        "Instant access · Secure premium service · Guaranteed results. Outfits, garages, levels and millions delivered with prestige by a 24/7 dedicated team.",
+      cta_discord: "Join the Discord",
+      cta_packs: "Order now",
     },
     packs: {
       label: "Our offers",
-      title: "Choose your rank",
-      subtitle: "Three levels of excellence, one single promise: quality.",
+      title: "Choose your level of prestige",
+      subtitle: "Three ranks of excellence. One promise: quality, delivered instantly.",
       order: "Order now",
       popular: "Popular",
-      best: "Best Value",
+      best: "Best offer",
+      micro_instant: "Instant access",
+      micro_secure: "Secure payment",
+      delivery: "Fast delivery after purchase via Discord",
       silver: {
         name: "Silver Pack",
         price: "€10",
@@ -142,17 +148,17 @@ export const translations = {
       title: "Excellence, by default",
       subtitle: "Four pillars that define our service.",
       items: [
-        { title: "Fast", desc: "Express delivery as soon as your order is confirmed.", icon: "zap" },
-        { title: "Secure", desc: "Proven methods, fully protected accounts.", icon: "shield" },
-        { title: "Reliable", desc: "Hundreds of satisfied clients across the community.", icon: "check" },
-        { title: "Active support", desc: "A dedicated team available day and night.", icon: "chat" },
+        { title: "Instant access", desc: "Express delivery as soon as your order is confirmed.", icon: "zap" },
+        { title: "100% secure", desc: "Proven methods, fully protected accounts.", icon: "shield" },
+        { title: "Guaranteed results", desc: "Hundreds of satisfied clients across the community.", icon: "check" },
+        { title: "24/7 support", desc: "A dedicated team available day and night.", icon: "chat" },
       ],
     },
     discord: {
       label: "Private community",
-      title: "Access Prestige services",
+      title: "Join Discord to order",
       subtitle:
-        "Join our private community and unlock personalized service, exclusive announcements and dedicated support.",
+        "Join our Discord to access our services and place your order quickly. Dedicated support, exclusive announcements, express delivery.",
       cta: "Join the Discord",
     },
     footer: {
