@@ -1,5 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { ArrowRight } from "lucide-react";
+import { DISCORD_URL } from "@/lib/constants";
 
 const DiscordSection = () => {
   const { t } = useLanguage();
@@ -18,7 +19,7 @@ const DiscordSection = () => {
           <p className="mx-auto mt-5 max-w-xl text-foreground/70 leading-relaxed">{t.discord.subtitle}</p>
 
           <a
-            href="https://discord.com"
+            href={DISCORD_URL}
             target="_blank"
             rel="noreferrer"
             className="group mt-10 inline-flex items-center justify-center gap-3 rounded-full border border-gold/50 bg-noir/80 px-10 py-4 text-sm font-semibold uppercase tracking-[0.22em] text-gold backdrop-blur transition-all duration-700 ease-in-out hover:border-gold hover:bg-noir hover:scale-[1.03] hover:shadow-gold-lg animate-pulse-soft"
