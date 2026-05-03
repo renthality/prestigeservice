@@ -30,7 +30,7 @@ const Hero = () => {
           {t.hero.tagline}
         </div>
 
-        <h1 className="mt-6 font-display text-5xl font-bold tracking-tight md:text-7xl lg:text-8xl animate-fade-in [animation-delay:0.5s]">
+        <h1 className="mt-8 font-display text-6xl font-bold leading-[1.05] tracking-tight md:text-8xl lg:text-9xl animate-fade-in [animation-delay:0.5s]">
           <span className="text-shine">{t.hero.title}</span>
         </h1>
 
