@@ -262,8 +262,8 @@
   }
 
   @keyframes pulse-soft {
-    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.35); }
-    50% { box-shadow: 0 0 0 14px hsl(var(--gold) / 0); }
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.25); transform: scale(1); }
+    50% { box-shadow: 0 0 0 18px hsl(var(--gold) / 0); transform: scale(1.015); }
   }
 
   @keyframes particle-float {
